@@ -7,4 +7,4 @@ version: 2
      steps:
        - checkout
        - run: php artisan clear-compiled
-       - run: php artisan serve --host=192.168.4.22 --port=8080
+       - run: php artisan serve --port=8080
