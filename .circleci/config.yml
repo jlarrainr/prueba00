@@ -1,0 +1,10 @@
+version: 2
+ jobs:
+   build:
+     working_directory:~/tmp
+     doker:
+       - image: circleci/php:7.4
+     steps:
+       - checkout
+       - run: php artisan clear-compiled
+       - run: php artisan serve --port=8080
